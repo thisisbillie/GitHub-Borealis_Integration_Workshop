@@ -1,0 +1,13 @@
+on: 
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send repo to Dataverse 
+        uses: IQSS/dataverse-uploader@v1.7
+        with:
+          DATAVERSE_TOKEN: ${{secrets.DATAVERSE_BOREALIS_TOKEN}}
+          DATAVERSE_SERVER: https://demo.borealisdata.ca
+          DATAVERSE_DATASET_DOI: doi:10.80240/FK2/QWGWRC
