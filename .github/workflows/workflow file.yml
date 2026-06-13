@@ -11,3 +11,4 @@ jobs:
           DATAVERSE_TOKEN: ${{secrets.BOREALIS_TOKEN}}
           DATAVERSE_SERVER: https://demo.borealisdata.ca
           DATAVERSE_DATASET_DOI: doi:10.80240/FK2/QWGWRC
+          DELETE: True
