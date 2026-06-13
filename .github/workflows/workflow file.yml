@@ -11,5 +11,5 @@ jobs:
           DATAVERSE_TOKEN: ${{secrets.BOREALIS_TOKEN}}
           DATAVERSE_SERVER: https://demo.borealisdata.ca
           DATAVERSE_DATASET_DOI: doi:10.80240/FK2/QWGWRC
-          GITHUB_DIR: only-upload-this-folder,and this second folder
-          DELETE: False
+          GITHUB_DIR: second-folder
+          DELETE: True
